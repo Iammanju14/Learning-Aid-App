@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">StudyCatalog</string>
+
+
+    <string name="spinner_value">select the city </string>
+    <string name="navigation_draw_open">open navigation draw</string>
+    <string name="navigation_draw_close">close navigation draw</string>
+
+</resources>

@@ -1,0 +1,375 @@
+html
+{ height: 100%;}
+
+*
+{ padding: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+}
+
+body
+{ 
+    font: normal 80% Arial, Helvetica, sans-serif;
+    background-color: #006600;;
+    color: #000;
+    background-image: url('../images/bg.gif');
+ }
+
+
+p
+{ padding: 0 0 20px 0;
+  line-height: 1.7em;
+  font-size: 100%;
+  text-align:justify; }
+
+img
+{ border: 0;}
+
+h1
+{ font: normal 175% Arial, Helvetica, sans-serif;
+  color: #000;
+  letter-spacing: 2px;
+  margin: 0 0 10px 0;}
+
+
+ul
+{ margin: 2px 0 22px 30px;
+  line-height: 1.7em;
+  font-style: normal;
+  font-size: 100%;}
+
+ol
+{ margin: 8px 0 22px 20px;}
+
+ol li
+{ margin: 0 0 11px 0;}
+
+#main, #header, #banner, #menubar, #site_content, #content_grey
+{ margin-left: auto; 
+  margin-right: auto;}
+
+#main
+{ 
+    outline: solid 10px rgba(0,0,0,0.10);
+    width: 920px;
+    margin: 20px auto;
+
+}
+
+#slideshow
+{ width: 920px;
+  height: 250px;
+  margin: 0 auto;
+  background: #FFF;} 
+  
+#header
+{ width: 920px;
+  height: 70px;
+  background-color: #006600;}
+
+#banner
+{ width: 920px;
+  position: relative;
+  text-align: center; 
+  height: 40px;
+  padding: 15px 0 0 0;
+  background: transparent;}
+
+#menubar
+{ width: 920px;
+  height: 50px;
+  text-align: center; 
+  margin: 0 auto;
+ background-color: #006600;
+  
+  } 
+  
+#welcome
+{ width: 880px;
+  float: left;
+  height: 40px;
+  margin: 0 auto;
+  padding-left: 20px;
+  background: transparent;} 
+   
+#welcome H1
+{
+    font-family:Kristen ITC;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 30px;
+} 
+  
+ul#menu
+{ margin:0;}
+
+ul#menu li
+{ padding: 0 0 0 0px;
+  list-style: none;
+  margin: 2px 0 0 0;
+  display: inline;
+  background: transparent;}
+
+ul#menu li a
+{ float: left;
+  height: 25px;
+  margin: 10px 0 0 20px;
+  padding: 5px 20px 0 20px;
+  text-align: center;
+  color: #FFF;
+  text-decoration: none;
+  background: transparent;
+  font-family:"Lucida Calligraphy";
+  font-weight: bold;
+  font-size:13px;
+  letter-spacing: 2px;
+  } 
+  
+ul#menu li.current a
+{ background: transparent url(../images/menu_button.jpg) repeat-x;}
+
+#site_content
+{ width: 880px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #FFF;
+  font-family:constantia;
+  font-size:15px;
+  letter-spacing:2px;
+  line-height:150%;
+  } 
+
+  #site_content h3,h1
+{
+    font-family:Comic Sans MS;
+    font-weight:bold;
+    letter-spacing:2px;
+    border-bottom:1px dotted black;
+    font-size:28px;
+    padding:5px;
+    margin-bottom:15px;
+}
+
+#content_grey
+ { 
+ padding-top:10px;
+ width: 920px;
+  height: 30px;
+  text-align: center; 
+  background-color: #006600;
+  color: #FFF;
+  
+    font-family:Constantia;
+    font-size:16px;
+    letter-spacing:2px;
+  
+  } 
+  
+
+
+/* styling for the slideshow on the homepage */
+ul.slideshow {
+  list-style: none;
+  width: 920px;
+  height: 250px;
+  overflow: hidden;
+  position: relative;
+  margin: 0;}
+  
+ul.slideshow li {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  right: 0;}
+ 
+ul.slideshow li.show {
+  z-index: 500;}
+ 
+ul img {
+  border: none;}
+ 
+#slideshow-caption {
+  width: 920px;
+  height: 38px;
+  position: absolute;
+  bottom: 0;
+  left: 0; 
+  z-index: 500;}
+ 
+#slideshow-caption .slideshow-caption-container {
+  padding: 10px 25px 10px 25px; 
+  background: transparent url(../images/transparent.png) repeat;  
+  z-index: 1000;}
+ 
+#slideshow-caption p {
+  padding: 0;
+  font: normal 130% arial, sans-serif;
+  color: #FFF;}
+ 
+ 
+ 
+ 
+ 
+ 
+ /* Pop Up Window CSS */
+.modalBackground
+    {
+        background-color: Black;
+        filter: alpha(opacity=60);
+        opacity: 0.6;
+    }
+    .modalPopup
+{
+    width: 600px;
+    border: 3px solid #ffffff;
+    border-radius: 12px;
+    color: #1a0602;
+    background-color: #006600;;
+    box-shadow: 0 0 2px 2px black;
+}
+    .modalPopup .heading
+{
+   border: 1px solid white;
+     background-color: #006600;;
+       height:20px;
+	font-family:Comic Sans MS;
+    font-size: 16px;
+    color: #ffffff;
+	text-align: center;
+	padding:20px;
+}
+
+.modalPopup table
+{
+background-color:#ffffff; margin-bottom:20px;
+}
+
+
+
+
+ /* Loading Window CSS */
+ .modal
+    {
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: black;
+        z-index: 99;
+        opacity: 0.8;
+        filter: alpha(opacity=80);
+        -moz-opacity: 0.8;
+        min-height: 100%;
+        width: 100%;
+    }
+    .loading
+    {
+        font-family: Arial;
+        font-size: 10pt;
+        border: 5px solid #67CFF5;
+        width: 200px;
+        height: 100px;
+        display: none;
+        position: fixed;
+        background-color: White;
+        z-index: 999;
+    }
+    
+    
+     /* Heading Window CSS */
+    
+    .hdstyle
+{
+	background-color:#452e17;
+  	color:White;
+  	-moz-box-shadow: 3px 3px 15px #ffffff;
+        -webkit-box-shadow: 4px 4px 25px #ffffff;
+        box-shadow: 3px 3px 15px #ffffff;
+	border-color:#000000;
+}
+
+.prehd
+{
+     font-family:Comic Sans MS;
+    font-size:20px;
+    color:Black;
+    letter-spacing:2px;
+    line-height:150%;
+    margin-bottom:20px;
+    border-bottom:1px dotted black;
+}
+
+.prestyle
+{
+    font-family:Comic Sans MS;
+    font-size:16px;
+    color:Black;
+    letter-spacing:2px;
+    line-height:150%;
+    margin-bottom:20px;
+}
+
+
+
+/* Home page */
+
+.imgdiv
+{
+    width:45%;
+    height:320px;
+    float: left;
+}
+.imgdiv img
+{
+    width:100%;
+    height:320px;
+}
+
+
+.contentdiv
+{
+    width:53%;
+    height:auto;
+    float:right;
+    font-family:Constantia;
+    font-size:16px;
+    letter-spacing:2px;
+    vertical-align:middle;
+}
+
+.meetusimgdiv
+{
+     width:220px;
+    height:220px;
+    float: left;
+    text-align:center;
+}
+.meetusimgdiv img
+{
+  width:220px;
+    height:220px;
+}
+
+.meetuscontentdiv
+{
+    width:53%;
+   height:160px;
+    float:right;
+    font-family:Constantia;
+    font-size:16px;
+    letter-spacing:2px;
+    padding-top:60px;
+}
+
+
+.clear
+{
+    clear:both;
+}
+
+.hr
+{
+    border-bottom:1px dotted black;
+    margin-bottom:30px;
+}

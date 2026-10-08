@@ -1,0 +1,80 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="Gnana_Jyothi.Admin.Admin" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+     <title>Gnana Jyothi</title>
+  <meta name="description" content="Sports Club" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  <link rel="stylesheet" type="text/css" href="../css/Contorl.css" />
+
+  <link rel="Stylesheet" type="text/css" href="../css/Menu.css" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+
+    <form id="form1" runat="server">
+    <div id="main">
+    
+	<div id="menubar">
+      
+
+      <ul id="HDropdown-orange-classic">
+
+<li><a href="AdminHome.aspx" title="Update Team">Home</a></li>
+
+<li><a href="#" title="Materials">Materials</a>
+<ul>
+<li><a href="AdminMaterialsList.aspx">List</a></li>
+<li><a href="AdminUploadMaterialsFile.aspx">Upload Files</a></li>
+
+</ul>
+</li>
+
+<li><a href="#" title="Users">Users</a>
+<ul>
+<li><a href="AdminLecturersList.aspx">Lecturers</a></li>
+<li><a href="AdminStudentsList.aspx">Students</a></li>
+</ul>
+</li>
+
+<li><a href="AdminCollegesList.aspx" title="Colleges">Colleges</a></li>
+
+<li><a href="#" title="Master">Master</a>
+<ul>
+<li><a href="AdminSubjectList.aspx">Subjets</a></li>
+<li><a href="AdminDepartmentList.aspx">Departments</a></li>
+<li><a href="AdminCourseList.aspx">Courses</a></li>
+<li><a href="AdminMaterialTypesList.aspx">Materials</a></li>
+</ul>
+</li>
+
+
+<li><a href="../Logout.aspx" title="Log Out">Log Out</a>
+</li>
+
+</ul>
+
+
+    </div><!--close menubar-->	
+
+
+	<div id="site_content">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+   </div><!--close site_content--> 
+    
+	<div id="content_grey">
+	  &copy; 0000. S C Technologies.
+    </div><!--close content_grey-->   
+ 
+  </div><!--close main-->
+ 
+    </form>
+</body>
+</html>

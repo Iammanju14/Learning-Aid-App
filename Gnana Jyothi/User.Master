@@ -1,0 +1,80 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="User.master.cs" Inherits="Gnana_Jyothi.User" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+     <title>Study Catalogue</title>
+  <meta name="description" content="Sports Club" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="stylesheet" type="text/css" href="css/Contorl.css" />
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/image_slide.js"></script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+      <script type = "text/javascript" >
+          function changeHashOnLoad() {
+              window.location.href += "#";
+              setTimeout("changeHashAgain()", "50");
+          }
+
+          function changeHashAgain() {
+              window.location.href += "1";
+          }
+
+          var storedHash = window.location.hash;
+          window.setInterval(function () {
+              if (window.location.hash != storedHash) {
+                  window.location.hash = storedHash;
+              }
+          }, 50);
+</script>
+</head>
+<body onload="changeHashOnLoad();">
+
+    <form id="form1" runat="server">
+    <div id="main">
+    
+	<div id="menubar">
+      <ul id="menu">
+        <li><a href="index.aspx">Home</a></li>
+        <li><a href="OurProfile.aspx">Our Profile</a></li>
+         <li><a href="MeetUs.aspx">Meet Us</a></li>
+        <li><a href="Login.aspx">Login</a></li>
+      </ul>
+    </div><!--close menubar-->	
+
+    <div id="slideshow">
+	  <ul class="slideshow">
+        <li class="show"><img src="images/1.jpg" alt="Study Catalogue" /></li>
+        <li><img src="images/2.jpg" alt="Study Catalogue" /></li>
+        <li><img src="images/3.jpg" alt="Study Catalogue" /></li>
+      </ul> 
+    </div><!--close slidesho-->		  
+	
+	<div id="header">
+	  <div id="banner">
+	    <div id="welcome">
+	      <h1>Study Catalog</h1>
+	    </div><!--close welcome-->
+	  </div><!--close banner-->
+    </div><!--close header-->
+    
+	<div id="site_content">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+   </div><!--close site_content--> 
+    
+	<div id="content_grey">
+	  &copy;2022. Study Catalogue Team
+    </div><!--close content_grey-->   
+ 
+  </div><!--close main-->
+ 
+    </form>
+</body>
+</html>
